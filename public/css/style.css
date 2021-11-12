@@ -1,0 +1,53 @@
+*{
+	padding: 0em;
+	margin: 0em;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: rgb(200,200,200);
+}
+
+#Container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#Top{
+	background-color: whitesmoke;
+	padding: 0.5em;
+
+}
+
+#Box{
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	height: auto;
+}
+
+div{
+	width: 50%;
+	margin: 0.5em;
+	padding: 1em;
+	user-select: none;
+	cursor: pointer;
+	border-radius: 0.3em;
+}
+
+.Lines_Off{
+	background-color: whitesmoke;
+
+}
+.Lines_On{
+	background-color: rgb(230,230,230);
+}
+
+.Lines_Over{
+	background-color: red;
+}
