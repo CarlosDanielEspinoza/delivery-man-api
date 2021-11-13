@@ -9,7 +9,6 @@ const Mongo = require("./models/mongo.js");
 const root = require("./routes/root.js");
 const api = require("./routes/api.js");
 
-
 const port = process.env.PORT || 3000;
 
 Mongo();

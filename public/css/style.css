@@ -4,50 +4,68 @@
 	box-sizing: border-box;
 	text-align: center;
 	font-family: sans-serif;
+	font-weight: bold;
+	color: rgb(50,50,50);
 }
 
 body{
 	background-color: rgb(200,200,200);
+	background-image: url("/img/patron.png");
 }
 
 #Container{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 #Top{
-	background-color: whitesmoke;
+	background: linear-gradient(rgb(240,240,240),rgb(230,230,230));
 	padding: 0.5em;
+	width: 100%;
 
 }
 
 #Box{
 	padding: 1em;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
-	height: auto;
+	justify-content: center;
+	width: 80%;
 }
 
 div{
-	width: 50%;
 	margin: 0.5em;
 	padding: 1em;
 	user-select: none;
 	cursor: pointer;
 	border-radius: 0.3em;
+	flex: 45%;
+	box-shadow: 0em 0.2em 0.5em rgb(150, 150, 150);
 }
+div:hover{
+	filter: brightness(1.1);
+	box-shadow: none;
+}
+
 
 .Lines_Off{
-	background-color: whitesmoke;
-
+	background: linear-gradient(rgb(240,240,240),rgb(230,230,230));
 }
 .Lines_On{
-	background-color: rgb(230,230,230);
+	background: linear-gradient(#ade691,#a0d685);
+}
+.Lines_Over{
+	background-color: #e05151;
+	background: linear-gradient(#e05151,#c44747);
 }
 
-.Lines_Over{
-	background-color: red;
+
+@media(max-width:500px){
+	div{
+		flex: 100%;
+		font-size: 1.2em;
+	}
 }
