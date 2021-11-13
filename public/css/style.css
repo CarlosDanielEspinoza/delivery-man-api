@@ -21,13 +21,16 @@ body{
 }
 
 #Top{
+	position: fixed;
 	background: linear-gradient(rgb(240,240,240),rgb(230,230,230));
 	padding: 0.5em;
 	width: 100%;
-
+	z-index: 2;
 }
 
 #Box{
+	position: absolute;
+	top:12%;
 	padding: 1em;
 	display: flex;
 	flex-direction: row;
